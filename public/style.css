@@ -1,9 +1,70 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    font-family: monospace,sans-serif;
+}
+
+
+
+
 body{
-    background-color: aquamarine ;
+    background:linear-gradient(to right, aquamarine ,indigo );
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin:  0;
     padding: 0;
+    
+}
+
+.container{
+    padding: 1em;
+    background-color: azure ;
+    width : 1200px;  
+    max-width: 90%;
+    box-shadow : 0  5px  20px  black;
+    border-radius: 15px;
+    background-image: url(/images/cold.jpg);
+}
+
+.contents{
+    padding : 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    /* This makes the div contents spaced as far apart as possible */
+    justify-content: space-between;
+    align-items: center;
+    font-size: 200%;
+}
+
+.header{
+    background-color: transparent;
+    height: 250px;
+    /* Following 2 lines make sure that the div elements are in a column */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar-container{
+
+    display: flex;
+    justify-content: center;
+  
+}
+
+.temperature{
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.search-bar{
+    width : 100%;
+    border-radius: 5px;
+    padding : 1em;
+    font-size: 1rem;
+
+    
 }
