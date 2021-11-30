@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <!-- We use defer here so that the JS loads after our page is done rendering -->
+    <!-- When the google api is done loading the initMap callback is executed -->
+    <script defer type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQJPockcIpaByOJLPfb5xYmhWUTSdI0tI&libraries=places">
+</script>
     <script defer src="script.js"></script> 
-    <title>Document</title>
+    <title>Weather</title>
 </head>
 <body>
     <div class="container">
@@ -38,10 +42,11 @@
           
         </div>
 
-        <div class="search-bar-container">
-            <input type="text" class="search-bar" placeholder="Enter City">
+        <div class="search-box-container">
+            <input type="text"  class="search-box" data-search-box placeholder="Enter City">
         </div>
 
     </div>
+    
 </body>
 </html>
