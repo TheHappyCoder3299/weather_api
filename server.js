@@ -6,6 +6,7 @@ if(process.env.NODE_ENV !== `production`){
 
 
 const ACCUWEATHER_API_KEY=process.env.ACCUWEATHER_API_KEY;
+const GOOGLE_API_KEY=process.env.GOOGLE_API_KEY;
 const express=require(`express`);
 
 const app=express();
